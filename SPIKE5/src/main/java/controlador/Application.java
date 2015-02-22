@@ -62,16 +62,7 @@ public class Application implements CommandLineRunner {
 		repositorySini.deleteAll();
 
 		// save a couple of siniestros
-		repositorySini.save(new Siniestro("4720BNL", "0000001", "VF1DA050525512550", "RENAULT", "RENAULT MEGANE DYNAMIQUE 1900 DCI COUPE", "01/01/2014", "A42 KM 30", "Siniestro total"));
-		
-		
-		/*
-		URLClassLoader Cargador = (URLClassLoader)ClassLoader.getSystemClassLoader();
-		URL[] cjto = Cargador.getURLs();
-		System.err.println("Classpath size: " + cjto.length);
-		for (int i=0; i < cjto.length; i++)
-			System.err.println(i + " " + cjto[i].toString()); 
-		*/
+		repositorySini.save(new Siniestro("4720BNL", "0000001", "VF1DA050525512550", "RENAULT", "RENAULT MEGANE DYNAMIQUE 1900 DCI COUPE", "01/01/2014", "A42 KM 30", "Siniestro total"));		
 		
 		// fetch all siniestros
 		System.out.println("Siniestros found with findAll():");
